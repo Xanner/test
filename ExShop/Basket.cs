@@ -21,7 +21,7 @@ namespace ExShop
         {
             Console.Clear();
             SelectedItems.Add(item);
-            Console.WriteLine(item.name + " dodany do koszyka");
+            Console.WriteLine(item.Name + " dodany do koszyka");
         }
 
         public static void ShowItemsInBasket()
@@ -29,7 +29,7 @@ namespace ExShop
             Console.Clear();
             foreach (var selectedItem in SelectedItems)
             {
-                Console.WriteLine(selectedItem.name);
+                Console.WriteLine(selectedItem.Name);
             }
         }
 
@@ -37,7 +37,7 @@ namespace ExShop
         {
             foreach (var item in SelectedItems)
             {
-                TotalPrice += item.price;
+                TotalPrice += item.Price;
             }
 
             //TODO:

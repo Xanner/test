@@ -30,15 +30,15 @@ namespace ExShop
 
             // tworzenie przedmiotow
             var maczuga = new Item();
-            maczuga.id = 1;
-            maczuga.name = "Kolecx20";
-            maczuga.price = 50;
+            maczuga.Id = 1;
+            maczuga.Name = "Kolecx20";
+            maczuga.Price = 50;
 
             var dildo = new Item
             {
-                id = 2,
-                name = "Smooth",
-                price = 100
+                Id = 2,
+                Name = "Smooth",
+                Price = 100
             };
 
             // dodawanie przedmiotow do listy
@@ -59,7 +59,7 @@ namespace ExShop
                 Console.WriteLine("----------------------");
                 for (int i = 0; i < biedronka.Items.Length; i++)
                 {
-                    Console.WriteLine( i + 1 + ". " + biedronka.Items[i].name);
+                    Console.WriteLine( i + 1 + ". " + biedronka.Items[i].Name);
                 }
                 Console.WriteLine("----------------------");
                 Console.WriteLine("3. Buy items");
