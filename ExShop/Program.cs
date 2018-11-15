@@ -27,7 +27,7 @@ namespace ExShop
             var biedak = new Customer(3, "Pan", "Zul", "brak", 5.5);
             var mracin = new Customer();
 
-
+            biedak.Chodzi(biedak.LastName);
             // tworzenie przedmiotow
             var maczuga = new Item();
             maczuga.Id = 1;

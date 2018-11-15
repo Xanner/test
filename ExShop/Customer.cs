@@ -1,4 +1,7 @@
-﻿namespace ExShop
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ExShop
 {
     public class Customer
     {
@@ -17,7 +20,7 @@
 
         public Customer(int id, string firstName, string lastName, string email)
         {
-            Id = Id;
+            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Email = email;
@@ -38,5 +41,10 @@
         public string LastName { get; set; }
         public string Email { get; set; }
         public double Cash { get; set; }
+
+        public void Chodzi(string name)
+        {
+            Console.WriteLine($"{name} idzie do przodu");
+        }
     }
 }
